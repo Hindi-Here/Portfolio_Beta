@@ -1,0 +1,298 @@
+body{
+    margin: 0%;
+    background:linear-gradient(to right, rgb(97, 97, 97), rgb(69, 69, 69));
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* header css */
+header{
+    width: 100%;
+    height:65px;
+    background-color: rgb(31, 31, 31);
+    border-bottom: 2px solid rgb(151, 151, 151);
+    display: grid;
+    grid-template-columns:15% 15% 15% 15%;
+}
+.headerBLOCK{
+    border-right: 1px solid rgb(90, 90, 90);
+}
+.headerBLOCK:hover{
+    background-color: rgb(37, 37, 37);
+}
+.headerTEXT{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    overflow:hidden;
+}
+/* header-bar [2 panel]*/
+.MyWork{
+    width: 15%;
+    position: absolute;
+    left: 14.85%;
+    top: 66px;
+    background-color: rgb(222, 222, 222);
+    border: 2px solid rgb(90, 90, 90);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+/* header-bar [3 panel]*/
+.AboutMe{
+    width: 770px;
+    position: absolute;
+    left: 29.85%;
+    top: 66px;
+    background-color: rgb(222, 222, 222);
+    border: 2px solid rgb(90, 90, 90);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+.AboutMe-image{
+    width: 175px;
+    height: 175px;
+    float: left;
+    margin: 5% 3% 0 3%;
+    border: 5px solid rgb(0, 0, 0);
+}
+.AboutMe-text{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+    line-height: 36px;
+    opacity: 0.85;
+}
+#sp1{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(196, 196, 196);
+}
+#sp1:hover{
+    background-color: rgb(182, 182, 182);
+}
+/* header-bar [3 panel]*/
+.messageMe{   
+    width: 15%;
+    position: absolute;
+    left: 44.85%;
+    top: 66px;
+    background-color: rgb(222, 222, 222);
+    border: 2px solid rgb(90, 90, 90);
+    box-shadow: 5px 5px 10px black;
+    display: none;
+}
+.messageMe-block, .MyWork-block{ /* 2-4 list panel */
+    height: 30px;
+    border-bottom: 2px solid rgb(62, 62, 62);
+}
+.messageMe-text, .messageMe-text-none,.MyWork-text{ /* 2-4 txt */
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    opacity: 0.7;
+}
+.messageMe-text:hover,.MyWork-text:hover{
+    opacity: 1;
+}
+
+/* body css */
+.column-body{
+    display: grid;
+    grid-template-columns:33% 34% 33%;
+    height: 560px;
+}
+.vk:hover{
+    background-color:rgb(90, 90, 90);
+}
+.vk-image{
+    height: 300px;
+    margin: 22% 0 0 15%;
+    opacity: 0.85;
+    filter: grayscale(40%);
+}
+.vk-image:hover{
+    transform: rotate(-7deg);
+    opacity: 1;
+}
+.github:hover{
+    background-color: rgb(90, 90, 90);
+}
+.github-image{
+    height: 335px;
+    margin: 20% 0 0 22%;
+    opacity: 0.85;
+    filter: grayscale(40%);
+}
+.github-image:hover{
+    transform: translateY(10px);
+    opacity: 1;
+}
+.youtube:hover{
+    background-color: rgb(90, 90, 90);
+}
+.youtube-image{
+    height: 300px;
+    margin: 25% 0 0 15%;
+    opacity: 0.85;
+    filter: grayscale(25%);
+}
+.youtube-image:hover{
+    transform: rotate(7deg);
+    opacity: 1;
+}
+.discraption-text1,.discraption-text2,.discraption-text3{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align:center;
+    opacity: 0;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+@keyframes discraption-text-animation{
+    0%{opacity: 0;}
+    100% {opacity: 0.7;}
+}
+
+/* photoshop MyWork css */
+.photoshop-body{
+    display: none;
+    grid-template-columns:25% 25% 25% 25%;
+    background:linear-gradient(to right, rgb(97, 97, 97), rgba(0, 0, 0, 0.219));
+}
+.photoshop-body-block{
+    height: 250px;
+}
+.photoshop-body-image{
+    margin: 25px 0 0 10%;
+    height: 200px;
+    width: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.photoshop-body-block:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+/* programs MyWork css */
+.programs-body{
+    display:none;
+    background:linear-gradient(to right, rgb(97, 97, 97), rgba(0, 0, 0, 0.218));
+}
+.programs-line-body{
+    display:grid;
+    grid-template-columns:50% 50%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.programs-line-body-image{
+    border: 5px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    background-color: black;
+    width: 80%;
+    margin: 5% 0 5% 10%;
+}
+.programs-line-body-discraptionBlock{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    margin: 0% 10% 5% 10%;
+}
+
+/* video MyWork css */
+.videos-body{
+    display:none; 
+    background:linear-gradient(to right, rgb(97, 97, 97), rgba(0, 0, 0, 0.208));
+}
+.videos-line-body{
+    display:grid;
+    grid-template-columns:50% 50%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.videos-line-body-video{
+    width: 80%;
+    height: 25vw;
+    margin: 5% 0 5% 10%;
+    border: 5px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+    background-color: black;
+}
+.videos-line-body-discraptionBlock{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    margin: 15% 5% 5% 10%;
+}
+#line-discraption{
+    font-size: 32px;
+}
+#link-video:hover{
+    color: rgb(255, 206, 206);
+    text-shadow: 0 0 10px rgb(255, 206, 206);
+}
+
+/* dark-preview css */
+.dark-preview{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.505);   
+}
+.dark-preview-block{
+    width: 700px;
+    height: 500px;
+    margin: 125px auto;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+}
+.dark-preview-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* footer css */
+footer{
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    border-top: 2px solid rgb(151, 151, 151);
+    height: 125px;
+}
+.footerTEXT{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 23px;
+    color: white;
+    text-align:center;
+}
+.footerTEXT2{
+    font-family: Roboto, Garamond, sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align:center;
+}
+
+::-webkit-scrollbar{width: 15px;}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(100, 100, 100);  
+    border-radius: 20px;      
+    border: 3px solid rgba(0, 0, 0, 0.333); 
+  }
